@@ -12,11 +12,10 @@ app.use(express.json())
 
 const list = require('./routes/list')
 app.use('/list',list)
-console.log(3000)
 
-app.listen(8080, err => {
+console.log(55);
+app.listen(process.env.PORT || 5000, err => {
     console.log(`Server listening `);
-
 });
 
 

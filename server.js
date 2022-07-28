@@ -14,4 +14,8 @@ const list = require('./routes/list')
 app.use('/list',list)
 
 
-app.listen(3000,() => console.log('Server Started'))
+app.listen(process.env.PORT || 5000, err => {
+    console.log(`Server listening `);
+
+
+});
